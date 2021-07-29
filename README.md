@@ -10,27 +10,11 @@ It is easy to use, has a user-friendly interface and allows you to:
 
 Allows access only to authorized users, and also provides the ability to register new ones.
 This project follows the rules of N-tier Architecture and SOLID. Has DAO, SERVICE and CONTROLLER layers and uses custom Injector class and Logger.
-### The relations between Car, Driver and Manutacturer are shown in this table:
+### The next DB diagram shows relations between Car, Driver, and Manufacturer.
 ![car_diagram_db_2_4f50942103](https://user-images.githubusercontent.com/83809337/127296817-e1af8215-1819-49ed-ba0a-6526e71e6542.png)
 
-## Login Page
-![2021-07-28](https://user-images.githubusercontent.com/83809337/127278546-766c4314-eec8-49e6-a948-d7e181809230.png)
-## Create new User/Driver Page
-![2021-07-28 (5)](https://user-images.githubusercontent.com/83809337/127292758-d0997b4b-9966-4952-a578-f68dee75e155.png)
-## Menu Page
-![2021-07-28 (4)](https://user-images.githubusercontent.com/83809337/127286181-27828f5e-f4d8-4682-b56f-730a3b1e3b58.png)
-## List All Cars Page
-![2021-07-28 (3)](https://user-images.githubusercontent.com/83809337/127292234-24632505-bbf2-4a2e-a604-ae9b600e685a.png)
-## List All Drivers Page
-![2021-07-28 (2)](https://user-images.githubusercontent.com/83809337/127292438-83d9f225-bece-4348-b038-636f464c8825.png)
-## Add New Car Page
-![2021-07-28 (6)](https://user-images.githubusercontent.com/83809337/127293037-de79a48b-7f22-4ab9-98b7-406fcec433b3.png)
-## Assign Driver To Car Page
-![2021-07-28 (8)](https://user-images.githubusercontent.com/83809337/127293364-09f38b7f-a8e0-44d7-a711-04662f001020.png)
-## Add New Manufacturer Page
-![2021-07-28 (7)](https://user-images.githubusercontent.com/83809337/127293629-3c476dfb-50bc-4248-951b-0c0085c7ca46.png)
-
 ## Technologies used
+- Java 15
 - Apache Tomcat - version 9.0.46
 - MySQL - version 8.0.25
 - JDBC
@@ -45,7 +29,7 @@ To run this project need to have installed
 - ApacheTomcat [TOMCAT](https://tomcat.apache.org/download-90.cgi)
 - MySQL and MySQL Workench [MySQL](https://www.mysql.com/downloads/)
 
-- Fork the project on your IDE
+- Clone the project on your IDE
 - In MySQL Workbench run the script from resources/init_db.sql.
 - In src/main/java/taxi/util/ConnectionUtil change URL, USERNAME and PASSWORD with your data
 
@@ -60,10 +44,16 @@ jdbc.Driver is already provided, but you can change it with more suitable as wel
 
 - Configure TomCat Local server (Add New Configuration -> TomCat -> Local -> Fix -> taxi-service:war exploded -> OK
 - Enjoy the project!
-  
 
-  (If your logger doesn't write logs in file, create file app.log in 
-  src/logs folder. In
- #### src/main/resources/log4j2.xml
- #### File name = "File" fileName = "logs\app.log"
-change "logs\app.log" with absolute path to .log file)
+
+(If your logger doesn't write logs in file, create file `app.log` in `src/logs` folder.
+Then in `src/main/resources/log4j2.xml` change the line `<File name = "File" fileName = "logs\app.log">`
+where you should replace `fileName` with your absolute path to `app.log` file)
+## Login Page
+![2021-07-29](https://user-images.githubusercontent.com/83809337/127461892-60bfc0c5-7f67-4f7e-bda5-2e71a568c2ed.png)
+## Create new User/Driver Page
+![2021-07-29 (1)](https://user-images.githubusercontent.com/83809337/127461072-e37faff8-43b7-412e-be51-59769b22fe68.png)
+## Menu Page
+![2021-07-29 (2)](https://user-images.githubusercontent.com/83809337/127460904-ad69c8f9-5d7d-4d35-8795-ae64982dba23.png)
+
+

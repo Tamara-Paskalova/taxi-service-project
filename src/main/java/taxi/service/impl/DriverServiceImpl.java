@@ -2,8 +2,6 @@ package taxi.service.impl;
 
 import java.util.List;
 import java.util.Optional;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import taxi.dao.DriverDao;
 import taxi.lib.Inject;
 import taxi.lib.Service;
@@ -12,7 +10,6 @@ import taxi.service.DriverService;
 
 @Service
 public class DriverServiceImpl implements DriverService {
-    private static final Logger logger = LogManager.getLogger(DriverServiceImpl.class);
     @Inject
     private DriverDao driverDao;
 
