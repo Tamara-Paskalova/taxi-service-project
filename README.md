@@ -4,7 +4,7 @@ It is easy to use, has a user-friendly interface and allows you to:
 - Create a new car.
 - Create a new driver.
 - Assign a driver to one or more cars.
-- Add detailed vehicle description by creating vehicle manufacturer information.
+- Add detailed vehicle description by creating manufacturer information.
 - Provide a list of cars assigned to each driver.
 - Delete cars, drivers and manufacturers.
 
@@ -31,6 +31,8 @@ To run this project need to have installed
 
 - Clone the project on your IDE
 - In MySQL Workbench run the script from resources/init_db.sql.
+  #### Warning!!! if you already have a database named "taxi", this script will delete it and create a new database with the same name.
+  
 - In src/main/java/taxi/util/ConnectionUtil change URL, USERNAME and PASSWORD with your data
 
 ![2021-07-28 (9)](https://user-images.githubusercontent.com/83809337/127299771-25ceddd3-305a-4108-86ae-f0fe9acc8a69.png)
@@ -42,18 +44,16 @@ for example
 
 jdbc.Driver is already provided, but you can change it with more suitable as well
 
-- Configure TomCat Local server (Add New Configuration -> TomCat -> Local -> Fix -> taxi-service:war exploded -> OK
+- Configure TomCat Local server (Add New Configuration -> TomCat -> Local -> Fix -> taxi-service:war exploded -> OK)
 - Enjoy the project!
 
 
 (If your logger doesn't write logs in file, create file `app.log` in `src/logs` folder.
 Then in `src/main/resources/log4j2.xml` change the line `<File name = "File" fileName = "logs\app.log">`
-where you should replace `fileName` with your absolute path to `app.log` file)
+where you should replace `logs\app.log` with your absolute path to `app.log` file)
 ## Login Page
 ![2021-07-29](https://user-images.githubusercontent.com/83809337/127461892-60bfc0c5-7f67-4f7e-bda5-2e71a568c2ed.png)
 ## Create new User/Driver Page
 ![2021-07-29 (1)](https://user-images.githubusercontent.com/83809337/127461072-e37faff8-43b7-412e-be51-59769b22fe68.png)
 ## Menu Page
 ![2021-07-29 (2)](https://user-images.githubusercontent.com/83809337/127460904-ad69c8f9-5d7d-4d35-8795-ae64982dba23.png)
-
-
