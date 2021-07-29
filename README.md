@@ -9,7 +9,8 @@ It is easy to use, has a user-friendly interface and allows you to:
 - Delete cars, drivers and manufacturers.
 
 Allows access only to authorized users, and also provides the ability to register new ones.
-This project follows the rules of N-tier Architecture and SOLID. Has DAO, SERVICE and CONTROLLER layers and uses custom Injector class and Logger.
+This project follows the rules of N-tier Architecture and SOLID. Has DAO, SERVICE and CONTROLLER layers and 
+uses custom implementation of dependency injection principle by field and Logger.
 ### The next DB diagram shows relations between Car, Driver, and Manufacturer.
 ![car_diagram_db_2_4f50942103](https://user-images.githubusercontent.com/83809337/127296817-e1af8215-1819-49ed-ba0a-6526e71e6542.png)
 
@@ -27,7 +28,7 @@ This project follows the rules of N-tier Architecture and SOLID. Has DAO, SERVIC
 To run this project need to have installed
 - IntelliJ IDEA Ultimate [IDEA](https://www.jetbrains.com/idea/download/#section=windows)
 - ApacheTomcat [TOMCAT](https://tomcat.apache.org/download-90.cgi)
-- MySQL and MySQL Workench [MySQL](https://www.mysql.com/downloads/)
+- MySQL and MySQL Workbench [MySQL](https://www.mysql.com/downloads/)
 
 - Clone the project on your IDE
 - In MySQL Workbench run the script from resources/init_db.sql.
